@@ -21,7 +21,7 @@ export default function Editor({
   completionApi = "/api/generate",
   className = "novel-relative novel-min-h-[500px] novel-w-full novel-max-w-screen-lg novel-border-stone-200 novel-bg-white sm:novel-mb-[calc(20vh)] sm:novel-rounded-lg sm:novel-border sm:novel-shadow-lg",
   defaultValue = defaultEditorContent,
-  extensions = [],
+  extensions = defaultExtensions,
   editorProps = {},
   onUpdate = () => {},
   onDebouncedUpdate = () => {},
@@ -96,7 +96,7 @@ export default function Editor({
   }, debounceDuration);
 
   const editor = useEditor({
-    extensions: [...defaultExtensions, ...extensions],
+    extensions,
     editorProps: {
       ...defaultEditorProps,
       ...editorProps,
