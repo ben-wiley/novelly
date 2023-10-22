@@ -1,5 +1,5 @@
 {
-  "name": "novel",
+  "name": "novelly",
   "private": true,
   "scripts": {
     "build": "turbo build",
@@ -65,5 +65,24 @@
     "tailwindcss": "^3.3.3",
     "tailwindcss-animate": "^1.0.6",
     "turbo": "^1.9.3"
-  }
+  },
+  "description": "<a href=\"https://novel.sh\">   <img alt=\"Novel is a Notion-style WYSIWYG editor with AI-powered autocompletions.\" src=\"https://novel.sh/opengraph-image.png\">   <h1 align=\"center\">Novel</h1> </a>",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ben-wiley/novelly.git"
+  },
+  "keywords": [
+    "ai",
+    "editor",
+    "react",
+    "nextjs"
+  ],
+  "author": "ben-wiley",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ben-wiley/novelly/issues"
+  },
+  "homepage": "https://github.com/ben-wiley/novelly#readme"
 }
